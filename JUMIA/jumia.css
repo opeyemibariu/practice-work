@@ -12,6 +12,10 @@
     background-color: gold;
     padding: 0 .3rem;
 }
+#selected-three {
+    color: initial;
+    text-decoration: none;
+}
 .container {
     display: flex;
     flex-direction: column;
