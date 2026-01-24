@@ -11,9 +11,11 @@
             padding: 0;
             box-sizing: border-box;
         }
-        #highlight a {
+        #highlight a[href="random_one_page_file.txt"] {
+            color: red;
+        }
+        #highlight a:not([href="random_one_page_file.txt"]) {
             color: blue;
-            white-space: nowrap;
         }
         #highlight-2 {
             color: hsl(212, 91%, 46%);
@@ -213,6 +215,10 @@
         .main-two {
             background-color: #eee;
         }
+        .main-two .skip-me p {
+            display: inline-block;
+            width: 96%;
+        }
         .main-two > .target > div {
             display: flex;
         }
@@ -230,6 +236,7 @@
             width: 90%;
             padding: 0.5rem;
             border-radius: 0.15rem;
+            background-color: red;
         }
         .main-two > .target > div > div:not(.skip-me) > p > a:hover {
             background-color: hsl(212, 91%, 46%);
@@ -278,10 +285,8 @@
             color: hsl(212, 91%, 46%);
             letter-spacing: .02rem;
         }
-        .main-two > .target > div > .skip-me > p > a {
+        .main-two > .target > div > .skip-me > p:not(p:nth-child(4)) > a {
             color: red;
-            display: inline-block;
-            width: 90%;
         }
         .main-two > .target > div > .skip-me > p:not(#highlight) {
             margin-bottom: 1rem;
@@ -437,7 +442,7 @@
         }
         @media screen and (max-width: 768px) {
             :root {
-                font-size: 7px;
+                font-size: 5px;
             }
             .container {
                 width: 100%;
@@ -510,8 +515,7 @@
                             <h2>Important Notice</h2>
                             <p>&nbsp;</p>
                             <p><a href="">Apply for University Transcript</a></p>
-                            <p id="highlight"><a href="">Apply for Diploma in Local Govt. & Devt. Std.</a></p>
-                            <p><a href="random_one_page_file.txt" download>Download Change of Course Form</a></p>
+                            <p id="highlight"><a href="">Apply for Diploma in Local Govt. & Devt. Std.</a><a href="random_one_page_file.txt" download>Download Change of Course Form</a></p>
                             <p><a href="">2024/2025 Accommodation Balloting for Returning Undergraduate Students(2nd Batch): The eportal will be opened for accommodation balloting on Friday, 3rd October 2025 around 11am. Please inform others</a></p>
                             <span>NEW!</span>
                         </div>
