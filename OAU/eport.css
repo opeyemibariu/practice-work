@@ -208,8 +208,7 @@
     background-color: #eee;
 }
 .main-two .skip-me p {
-    display: inline-block;
-    width: 96%;
+    width: 90%;
 }
 .main-two > .target > div {
     display: flex;
@@ -279,7 +278,7 @@
 .main-two > .target > div > .skip-me > p:not(p:nth-child(4)) > a {
     color: red;
 }
-.main-two > .target > div > .skip-me > p:not(#highlight) {
+.main-two > .target > div > .skip-me > p {
     margin-bottom: 1rem;
 }
 .the-foot > .links {
@@ -420,13 +419,21 @@
     padding: 0 .2rem;
 }
 
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
+    #highlight a[href="random_one_page_file.txt"] {
+        display: inline-block;
+        width: fit-content;
+    }
     .target {
         margin: 0 auto;
         max-width: 75.05rem;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    #highlight a[href="random_one_page_file.txt"] {
+        display: inline-block;
+        width: fit-content;
+    }
     .container {
         width: 75.05rem;
     }
