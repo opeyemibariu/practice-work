@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* :root {
-    font-size: 5px;
-} */
 #highlight a {
     color: blue;
     white-space: nowrap;
@@ -219,7 +216,7 @@
     padding-left: 1rem;
 }
 .main-two > .target > div > div:last-child {
-    padding-left: 4.4rem;
+    padding-left: .4rem;
 }
 .main-two > .target > div > div:not(.skip-me) > p:not(.capitalise) > a {
     display: inline-block;
