@@ -159,7 +159,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.bottom > li > span {
+.bottom > ul > li > span {
     color: gold;
     background-color: black;
     border-radius: .2rem;
