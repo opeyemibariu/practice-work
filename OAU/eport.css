@@ -213,6 +213,8 @@
 }
 .main-two > .target > div > div {
     flex: 1;
+}
+.main-two > .target > div > div:first-child {
     padding-left: 1rem;
 }
 .main-two > .target > div > div:last-child {
