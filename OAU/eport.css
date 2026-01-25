@@ -352,9 +352,10 @@
     align-items: center;
 }
 .the-foot > .payment > .target > div > fieldset > div > span:nth-child(1) {
-    color: orange;
-    font-weight: bold;
+    color: midnightblue;
+    font-weight: bolder;
     font-style: italic;
+    font-family: Tahoma;
 }
 .the-foot > .payment > .target > div > fieldset > div > span:nth-child(2) {
     width: 100%;
